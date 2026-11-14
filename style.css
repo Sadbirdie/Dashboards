@@ -1,0 +1,196 @@
+body {
+    background-color: rgb(12, 12, 12);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+/*menu*/
+
+.menu {
+    max-width: 950px;
+    max-height: 100px;
+    margin: 30px auto;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, .06);
+    border-radius: 20px 20px 3px 3px;
+    background: radial-gradient(ellipse at 24% 18%, rgba(142, 178, 220, .2), transparent 70%), linear-gradient(140deg, #313a49 0%, #384556 52%, #222730 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 18px 40px -24px rgba(0, 0, 0, .8);
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1px;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu input {
+    display: none;
+}
+
+.menu label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #acb6bb;
+    transition: color .5s;
+}
+
+.menu label:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* menu interactivity*/
+
+.dashboard {
+    display: none;
+}
+
+.dashboard-container:has(#dash-one:checked) .dashboard__annual-loses,
+.dashboard-container:has(#dash-two:checked) .dashboard__cost-ransomware,
+.dashboard-container:has(#dash-three:checked) .dashboard__data-breach,
+.dashboard-container:has(#dash-four:checked) .dashboard__weekly-attacks {
+    display: block;
+}
+
+#dash-one:checked+label,
+#dash-two:checked+label,
+#dash-three:checked+label,
+#dash-four:checked+label {
+    color: white;
+}
+
+/*dashboard contents*/
+
+.dashboard {
+    max-width: 550px;
+    max-height: 300px;
+    margin: 30px auto;
+    color: white;
+    padding: 20px 40px;
+    border: 1px solid rgba(255, 255, 255, .06);
+    border-radius: 28px;
+    background: radial-gradient(ellipse at 24% 18%, rgba(142, 178, 220, .2), transparent 70%), linear-gradient(140deg, #313a49 0%, #384556 52%, #222730 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 18px 40px -24px rgba(0, 0, 0, .8);
+}
+
+
+/*intro contents*/
+
+.intro {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #acb6bb;
+}
+
+.intro span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.intro p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #acb6bb;
+}
+
+.flex-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-percent {
+    font-size: 22px;
+    color: #ff777e;
+}
+
+/*
+.intro-percent::before {
+    content: "↗";
+    font-size: 22px;
+    color: #ff777e;
+    padding-right: 5px;
+} */
+
+
+/*chart contents*/
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.chart-header h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.chart-header p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #acb6bb;
+}
+
+.chart-data {
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.bar-wrapper {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.bar {
+    width: 100%;
+    max-width: 75px;
+    background-color: #5cd3ff;
+    border-color: rgba(197, 223, 255, .6);
+    border-radius: 6px 6px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.bar-highlight {
+    background-color: #2457A7;
+}
+
+.bar-value {
+    font-size: 13px;
+    font-weight: bold;
+    color: #dee0e2;
+}
+
+.bar-year {
+    font-size: 13px;
+    font-weight: bold;
+    color: #dee0e2;
+}
+
+.source {
+    font-size: 12px;
+    font-style: italic;
+    color: #acb6bb;
+}
+
+.source a {
+    color: #acb6bb;
+    text-decoration: underline;
+}

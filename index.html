@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <nav class="menu">
+            <input type="radio" name="dashboard" id="dash-one" checked>
+            <label for="dash-one">Total annual losses due to cyberattacks</label>
+
+            <input type="radio" name="dashboard" id="dash-two">
+            <label for="dash-two">The annual cost of ransomware</label>
+
+            <input type="radio" name="dashboard" id="dash-three">
+            <label for="dash-three">The global average cost of a data breach</label>
+
+            <input type="radio" name="dashboard" id="dash-four">
+            <label for="dash-four">Average weekly cyberattacks per organization</label>
+        </nav>
+
+        <section class="dashboard dashboard__annual-loses">
+            <div class="intro">
+                <div class="flex-left">
+                    <span>$11,36T</span>
+                    <p>Total annual losses due to cyberattacks, data theft, etc.</p>
+                </div>
+                <div class="flex-right">
+                    <span class="intro-percent">+10,39%</span>
+                    <p>compared to 2025</p>
+                </div>
+            </div>
+
+            <div class="chart">
+                <div class="chart-header">
+                    <div>
+                        <h2>Cybercrime costs by year</h2>
+                        <p>USD trillion</p>
+                    </div>
+                </div>
+
+                <div class="chart-data">
+                    <div class="bar-wrapper">
+                        <span class="bar-value">7.08</span>
+                        <div class="bar" style="height: 29%"></div>
+                        <span class="bar-year">2022</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">8.15</span>
+                        <div class="bar" style="height: 40%"></div>
+                        <span class="bar-year">2023</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">9.22</span>
+                        <div class="bar" style="height: 50%"></div>
+                        <span class="bar-year">2024</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">10.29</span>
+                        <div class="bar" style="height: 60%"></div>
+                        <span class="bar-year">2025</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">11.36</span>
+                        <div class="bar bar-highlight" style="height: 70%"></div>
+                        <span class="bar-year">2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="source">
+                <p>Source: <a href="https://www.demandsage.com/cybersecurity-statistics/">DemandSage</a></p>
+            </div>
+        </section>
+
+        <section class="dashboard dashboard__cost-ransomware">
+            <div class="intro">
+                <div class="flex-left">
+                    <span>$74B</span>
+                    <p>The annual cost of ransomware: ransom payouts, downtime, etc.</p>
+                </div>
+                <div class="flex-right">
+                    <span class="intro-percent">+29,82%</span>
+                    <p>compared to 2025</p>
+                </div>
+            </div>
+
+            <div class="chart">
+                <div class="chart-header">
+                    <div>
+                        <h2>Ransomware: global damage</h2>
+                        <p>$ billion</p>
+                    </div>
+                </div>
+
+                <div class="chart-data">
+                    <div class="bar-wrapper">
+                        <span class="bar-value">NA</span>
+                        <div class="bar" style="height: 20%; background-color: #acb6bb;"></div>
+                        <span class="bar-year">2022</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">NA</span>
+                        <div class="bar" style="height: 20%; background-color: #acb6bb;"></div>
+                        <span class="bar-year">2023</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">42</span>
+                        <div class="bar" style="height: 30%"></div>
+                        <span class="bar-year">2024</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">57</span>
+                        <div class="bar" style="height: 43%"></div>
+                        <span class="bar-year">2025</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">74</span>
+                        <div class="bar bar-highlight" style="height: 60%"></div>
+                        <span class="bar-year">2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="source">
+                <p>Source: <a
+                        href="https://cybersecurityventures.com/wp-content/uploads/2023/11/RansomwareCost.pdf">Cybersecurity
+                        Ventures</a></p>
+            </div>
+        </section>
+
+        <section class="dashboard dashboard__data-breach">
+            <div class="intro">
+                <div class="flex-left">
+                    <span>$4,99M</span>
+                    <p>The global average cost of a data breach</p>
+                </div>
+                <div class="flex-right">
+                    <span class="intro-percent">+12,38%</span>
+                    <p>compared to 2025</p>
+                </div>
+            </div>
+
+            <div class="chart">
+                <div class="chart-header">
+                    <div>
+                        <h2>Damages per data breach</h2>
+                        <p>$ million</p>
+                    </div>
+                </div>
+
+                <div class="chart-data">
+                    <div class="bar-wrapper">
+                        <span class="bar-value">4.35</span>
+                        <div class="bar" style="height: 27%"></div>
+                        <span class="bar-year">2022</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">4.45</span>
+                        <div class="bar" style="height: 33%"></div>
+                        <span class="bar-year">2023</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">4.88</span>
+                        <div class="bar" style="height: 50%"></div>
+                        <span class="bar-year">2024</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">4.44</span>
+                        <div class="bar" style="height: 32%"></div>
+                        <span class="bar-year">2025</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">4.99</span>
+                        <div class="bar bar-highlight" style="height: 57%"></div>
+                        <span class="bar-year">2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="source">
+                <p>Source: <a href="https://www.ibm.com/reports/data-breach">IBM</a></p>
+            </div>
+        </section>
+
+        <section class="dashboard dashboard__weekly-attacks">
+            <div class="intro">
+                <div class="flex-left">
+                    <span>2422</span>
+                    <p>Average weekly cyberattacks per organization (global) in Q2, 2026</p>
+                </div>
+                <div class="flex-right">
+                    <span class="intro-percent">+22,07%</span>
+                    <p>compared to 2025</p>
+                </div>
+            </div>
+
+            <div class="chart">
+                <div class="chart-header">
+                    <div>
+                        <h2>Cyberattacks: per organization per week Q2</h2>
+                        <p>Average</p>
+                    </div>
+                </div>
+
+                <div class="chart-data">
+                    <div class="bar-wrapper">
+                        <span class="bar-value">1163</span>
+                        <div class="bar" style="height: 20%"></div>
+                        <span class="bar-year">2022</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">1258</span>
+                        <div class="bar" style="height: 30%"></div>
+                        <span class="bar-year">2023</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">1636</span>
+                        <div class="bar" style="height: 43%"></div>
+                        <span class="bar-year">2024</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">1984</span>
+                        <div class="bar" style="height: 53%"></div>
+                        <span class="bar-year">2025</span>
+                    </div>
+
+                    <div class="bar-wrapper">
+                        <span class="bar-value">2422</span>
+                        <div class="bar bar-highlight" style="height: 70%"></div>
+                        <span class="bar-year">2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="source">
+                <p>Source: <a href="https://www.demandsage.com/cybersecurity-statistics/">DemandSage</a></p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
